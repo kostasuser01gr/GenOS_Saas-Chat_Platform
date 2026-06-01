@@ -1,0 +1,8 @@
+{
+  "name": "Generative UI Agent",
+  "description": "An experimental interface demonstrating LLMs composing functional UI blocks instead of text replies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

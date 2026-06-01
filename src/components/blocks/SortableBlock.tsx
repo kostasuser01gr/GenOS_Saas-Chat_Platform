@@ -2,9 +2,9 @@ import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { GripHorizontal, Maximize2, Trash2, Columns } from 'lucide-react';
 import { motion } from 'motion/react';
-import { ReactNode } from 'react';
+import { Key, ReactNode } from 'react';
 
-export function SortableBlock({ id, className, children, onFocus, onDelete, onResize, type }: { id: string, className?: string, children: ReactNode, onFocus: () => void, onDelete: () => void, onResize: () => void, type?: string }) {
+export function SortableBlock({ id, className, children, onFocus, onDelete, onResize, type }: { key?: Key, id: string, className?: string, children: ReactNode, onFocus: () => void, onDelete: () => void, onResize: () => void, type?: string }) {
   const {
     attributes,
     listeners,
